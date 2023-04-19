@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhpi13na6VC7bG6zT8J28W1hlG3Ta-xq-cJA&usqp=CAU">
+    <title>Tabuada</title>
+
+    <script>
+        function gerarTabuada() {
+            var numero = parseInt(document.getElementById('numero').value);
+            var tabela = document.getElementById('tabela-tabuada');
+
+            tabela.innerHTML = ""; //limpar a tabela antes de poder gerar outra tabela
+
+            //gerar a tabuada
+
+            for (var i = 1; i <= 10; i++) {
+                var resultado = numero * i;
+                var linha = "<tr><td>" + numero + " X " + i + "</td><td>" + "= " + resultado + "</td></tr>" ;
+
+                tabela.innerHTML += linha
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <center>
+
+        <p></p>
+        
+        <div class="caixa">
+            <h1>Tabuada Dinâmica</h1>
+
+            <p>Digite algum valor para gerar a tabuada:</p>
+
+            <input type="text" name="" id="numero" placeholder="Digite um número..">
+            <br>
+            <button id="tabuada" onclick="gerarTabuada()">Gerar Tabuada</button>
+            <table id="tabela-tabuada"></table>
+
+            <button id="toggle-fun">Alternar modo</button>
+        </div>
+
+        <footer>
+            <p>Feito por Davi dos santos - <span>Gmail: davisantos2577@gmail.com</span></p>
+        </footer>
+
+    </center>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

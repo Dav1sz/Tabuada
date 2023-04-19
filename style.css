@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+@font-face {
+    font-family: alkatra;
+    src: url(Alkatra/Alkatra-VariableFont_wght.ttf);
+}
+
+/* Modo claro */
+
+body {
+    font-family: alkatra;
+    transition: 0.5s;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    padding: 20px;
+    font-size: 18px;
+}
+
+tbody {
+    color: black;
+    font-size: 17px;
+}
+
+input {
+    font-size: 22px;
+    padding: 10px;
+    background-color: #a6ff00;
+    border: 5px solid #aaff00;
+    border-radius: 15px;  
+}
+
+input::placeholder {
+    color: #7d7d7d;
+}
+
+input:hover {
+    background-color :#7BB516;
+    border: 5px solid #7BB516;
+}
+
+.caixa {
+    max-width: 380px;
+    background-color: #8379FF;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .9);
+    text-align: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    
+}
+
+#tabuada {
+    font-size: 20px;
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 5px solid #aaff00;
+    border-radius: 15px;
+    background-color: #a6ff00;
+}
+
+#tabuada:hover {
+    border: 5px solid #497A00;
+    border-radius: 15px;
+    background-color: #497A00;
+    cursor: pointer;
+}
+
+#toggle-fun {
+    font-size: 20px;
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 5px solid #aaff00;
+    border-radius: 15px;
+    background-color: #a6ff00;
+}
+
+#toggle-fun:hover {
+    border: 5px solid #497A00;
+    border-radius: 15px;
+    background-color: #497A00;
+    cursor: pointer;
+}
+
+footer {
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    text-align: center;
+}
+
+span {
+    color: rgb(149, 255, 0);
+}
+
+/* Modo escuro */
+
+.dark-mode {
+    background-color: #111111;
+    transition: 0.5s;
+}
+
+.dark-mode .caixa{
+    background-color: #2e13c5;
+    box-shadow: 0 0 20px #6449fc, inset 0 0 20px #6449fc;
+}
+
+.dark-mode h1{
+    color: #ffffff;
+}
+
+.dark-mode p {
+    color: #ffffff;
+}
+
+.dark-mode tbody {
+    color: #ffffff;
+}
+
+.dark-mode input {
+    border: 5px solid #FAED22;
+    background-color: #FAED22;
+}
+
+.dark-mode input::placeholder {
+    color: #868686;
+}
+
+.dark-mode input:hover {
+    border: 5px solid #B7BA1A;
+    background-color: #B7BA1A;
+}
+
+.dark-mode #tabuada {
+    border: 5px solid #FAED22;
+    background-color: #FAED22;
+    color: #868686;
+}
+
+.dark-mode #tabuada:hover {
+    border: 5px solid #B7BA1A;
+    background-color: #B7BA1A;
+}
+
+.dark-mode #toggle-fun {
+    border: 5px solid #FAED22;
+    background-color: #FAED22;
+    color: #868686;
+}
+
+.dark-mode #toggle-fun:hover {
+    border: 5px solid #B7BA1A;
+    background-color: #B7BA1A;
+}
+
+.dark-mode footer {
+    background-color: rgba(21, 21, 21, 0.5);
+}
+
+.dark-mode span {
+    color: #FAED21;
+}
+
+
+
